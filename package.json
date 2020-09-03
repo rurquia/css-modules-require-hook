@@ -1,5 +1,5 @@
 {
-  "name": "css-modules-require-hook",
+  "name": "@rurquia/css-modules-require-hook",
   "version": "4.2.3",
   "description": "A require hook to compile CSS Modules on the fly",
   "main": "lib/index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/css-modules/css-modules-require-hook.git"
+    "url": "https://github.com/rurquia/css-modules/css-modules-require-hook.git"
   },
   "keywords": [
     "css-modules",
@@ -21,9 +21,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/css-modules/css-modules-require-hook/issues"
+    "url": "https://github.com/rurquia/css-modules/css-modules-require-hook/issues"
   },
-  "homepage": "https://github.com/css-modules/css-modules-require-hook",
+  "homepage": "https://github.com/rurquia/css-modules/css-modules-require-hook",
   "eslintConfig": {
     "extends": "@sullenor/eslint-config/node",
     "rules": {
@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "debug": "^2.2.0",
-    "generic-names": "^1.0.1",
+    "generic-names": "^2.0.1",
     "glob-to-regexp": "^0.3.0",
     "icss-replace-symbols": "^1.0.2",
     "lodash": "^4.3.0",
