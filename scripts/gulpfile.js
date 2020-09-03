@@ -1,24 +1,28 @@
-'use strict';
+"use strict";
 
-const babel = require('gulp-babel');
-const debug = require('gulp-debug');
-const gulp = require('gulp');
+const babel = require("gulp-babel");
+const debug = require("gulp-debug");
+const gulp = require("gulp");
 
-gulp.task('transpile', () =>
-  gulp.src('src/*.js')
-    .pipe(babel({
-      presets: [
-        [
-          'env',
-          {
-            loose: true,
-            modules: 'commonjs',
-            targets: {
-              node: 4,
+gulp.task("transpile", () =>
+  gulp
+    .src("src/*.js")
+    .pipe(
+      babel({
+        presets: [
+          [
+            "@babel/preset-env",
+            {
+              loose: true,
+              modules: "commonjs",
+              targets: {
+                node: 4,
+              },
             },
-          },
+          ],
         ],
-      ],
-    }))
-    .pipe(debug({title: 'transpiled'}))
-    .pipe(gulp.dest('lib')));
+      })
+    )
+    .pipe(debug({ title: "transpiled" }))
+    .pipe(gulp.dest("lib"))
+);
